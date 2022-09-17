@@ -1,0 +1,129 @@
+﻿<blocks>
+
+	<insertAfter xpath="/blocks/block[@name='cntStorageGenericPOI']">
+
+        <!-- **********************************************************
+            BICYCLE DECORATIONS
+        *********************************************************** -->
+        <block name="zztongBicycle">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="vehicleBicyclePlaceable"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="Class" value="Loot"/>
+            <property name="LootList" value="playerStorage"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Path" value="solid"/>
+            <property name="Model" value="#@modfolder:Resources/zzAssets.unity3d?ZZBicycle.prefab"/>
+            <property name="Collide" value="movement,melee,rocket"/>
+            <property name="MaxDamage" value="250"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="MultiBlockDim" value="1,1,2"/>
+            <property name="ModelOffset" value="0,0.0,0"/> 
+            <property name="IsTerrainDecoration" value="true"/>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceForgedIron" count="1" prob="0.1" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceMechanicalParts" count="1" prob="0.2" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceLeather" count="1" prob="0.2" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceSpring" count="1" prob="0.5" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapIron" count="10,20" tag="allHarvest"/>
+            <drop event="Destroy" count="0"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="FilterTags" value="MC_outdoor,SC_decor"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+            <property name="DescriptionKey" value="furnitureGroupDesc"/>
+            <property name="SortOrder1" value="fh38"/>
+        </block>
+
+        <block name="zztongBicycleLeft">
+            <property name="Extends" value="zztongBicycle"/>
+            <property name="ModelOffset" value="-0.4,0.0,0"/> 
+        </block>
+
+        <block name="zztongBicycleRight">
+            <property name="Extends" value="zztongBicycle"/>
+            <property name="ModelOffset" value="0.4,0.0,0"/> 
+        </block>
+
+        <block name="zztongBicycleWall">
+            <property name="Extends" value="zztongBicycle"/>
+            <property name="MultiBlockDim" value="1,2,2"/>
+            <property name="ModelOffset" value="0.0,0.5,0"/> 
+        </block>
+
+        <block name="zztongBicycleWallLeft">
+            <property name="Extends" value="zztongBicycleWall"/>
+            <property name="ModelOffset" value="-0.4,0.5,0"/> 
+        </block>
+
+        <block name="zztongBicycleWallRight">
+            <property name="Extends" value="zztongBicycleWall"/>
+            <property name="ModelOffset" value="0.4,0.5,0"/> 
+        </block>
+
+        <!-- **********************************************************
+            STORE SIGNS: FRED E. FROMAGE
+        *********************************************************** -->
+        <block name="zztongSignShopFredEFromage">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="Fred-E-Fromage-Icon"/>
+            <property name="CustomIconTint" value="6BB6E8"/>
+            <property name="Material" value="Mmetal"/>
+            <property name="DisplayType" value="blockMulti"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+            <property name="Model" value="#@modfolder:Resources/zzAssets.unity3d?ZZSignFredEFromage.prefab"/>
+            <property name="MultiBlockDim" value="1,1,5"/>
+            <property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
+            <drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+            <drop event="Harvest" name="resourceElectricParts" count="2,6" tag="salvageHarvest"/>
+            <drop event="Harvest" name="resourceScrapPolymers" count="2,6" tag="salvageHarvest"/>
+            <drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+            <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+            <property name="FilterTags" value="MC_outdoor,SC_signs"/>
+            <property name="SortOrder1" value="70s0"/>
+            <property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
+        </block>
+
+        <block name="zztongSignShopFredEFromageWall">
+            <property name="Extends" value="zztongSignShopFredEFromage"/>
+            <property name="ModelOffset" value="0.25,0.5,0"/> 
+        </block>
+
+        <block name="zztongSignShopFredEFromageLarge">
+            <property name="Extends" value="zztongSignShopFredEFromage"/>
+            <property name="Model" value="#@modfolder:Resources/zzAssets.unity3d?ZZSignFredEFromageLarge.prefab"/>
+            <property name="ModelOffset" value="0.0,1.0,0"/> 
+            <property name="MultiBlockDim" value="1,2,10"/>
+        </block>
+
+        <!-- **********************************************************
+            RUBBER DUCKY
+        *********************************************************** -->
+
+        <block name="zztongRubberDucky">
+            <property name="CreativeMode" value="Dev"/>
+            <property name="CustomIcon" value="resourceDuckECT"/>
+            <property name="Material" value="Mplastics"/>
+            <property name="MaxDamage" value="1"/>
+            <property name="StabilitySupport" value="false"/>
+            <property name="Shape" value="ModelEntity"/>
+            <property name="Model" value="#@modfolder:Resources/zzAssets.unity3d?ZZRubberDucky.prefab"/>
+            <property name="OnlySimpleRotations" value="true"/>
+            <property name="ImposterDontBlock" value="true"/>
+            <property name="IsTerrainDecoration" value="true"/>
+            <property name="CanPickup" value="true" param1="zztongRubberDucky"/>
+            <drop event="Destroy" name="resourceScrapPolymers" count="1"/>
+            <property name="Collide" value="melee,bullet,arrow,rocket"/>
+            <property name="Group" value="Decor/Miscellaneous"/>
+            <property name="EconomicValue" value="1"/>
+            <property name="FilterTags" value="MC_building,SC_decor,SC_residential"/>
+            <property name="DescriptionKey" value="zztongRubberDuckyDesc"/>
+            <property name="ModelOffset" value="0.25,0,0.25"/> 
+        </block>
+
+
+    </insertAfter>
+</blocks>
