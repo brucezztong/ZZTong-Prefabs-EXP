@@ -1,28 +1,26 @@
 ﻿<lootcontainers>
-	<insertAfter xpath="/lootcontainers/lootcontainer[@id='551']">
 
     <!-- Add the duck from the J. Warren McClure School of Emerging Communication Technologies. -->
     <append xpath="/lootcontainers/lootgroup[@name='groupFileCabinet01']">
-        <item name="resourceDuckECT" count="1"/>
+        <item name="zztongRubberDucky" count="1"/>
     </append>
 
-        <!--  
-        <lootcontainer id="1000" name="zztongStorageCrateAmmo" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
-            <item name="ammo9mmBulletBall" prob="1" count="4,8"/>
-            <item name="ammoShotgunShell" prob="1" count="1,2"/>
-            <item name="ammo762mmBulletBall" prob="1" count="3,6"/>
-            <item name="ammo44MagnumBulletBall" prob="0.4" count="3,6"/>
-            <item name="ammoArrowIron" prob="0.4" count="2,4"/>
-            <item name="ammoCrossbowBoltIron" prob="0.4" count="1,3"/>
-            <item name="resourcePotassiumNitratePowder" prob="0.4" count="10,20"/>
-            <item name="resourceCoal" prob="0.4" count="5,10"/>
-            <item name="resourceScrapLead" prob="0.4" count="25,50"/>
-            <item name="resourceScrapBrass" prob="0.4" count="50,150"/>
-            <item name="resourceBulletCasing" prob="0.4" count="5,10"/>
-            <item name="resourceBulletTip" prob="0.4" count="5,10"/>
-            <item name="resourceGunPowder" prob="0.4" count="5,10"/>
-        </lootcontainer>
-        -->
 
+    <!-- Fred E. Fromage Boxes are a blend of Shamway and Mo-Power shelf loot. -->
+	<insertAfter xpath="/lootcontainers/lootcontainer[@id='551']">
+        <lootcontainer id="1000" name="zztongStorageBoxFredEFromage" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+            <item name="foodCanSham" count="1,3"/>
+            <item group="groupFoodTrash" loot_prob_template="high"/>
+            <item group="groupFoodCommon" loot_prob_template="low"/>
+            <item group="groupDrinksCommon" loot_prob_template="low"/>
+            <item name="resourceScrapPolymers" count="2,4" loot_prob_template="med"/>
+            <item name="resourceScrapIron" count="2,10" loot_prob_template="med"/>
+            <item name="resourcePaper" count="2,4" loot_prob_template="med"/>
+            <item name="resourceHeadlight" count="1" loot_prob_template="med"/>
+            <item name="resourceElectricParts" count="1,2" loot_prob_template="medLow"/>
+            <item name="resourceMechanicalParts" count="1,2" loot_prob_template="medLow"/>
+            <item group="groupElectricalDevices" loot_prob_template="veryLow"/>
+        </lootcontainer>
 	</insertAfter>
+
 </lootcontainers>

@@ -1,9 +1,11 @@
 Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-zztongRubberDucky,blocks,Promo,,,"Rubber Ducky"
-zztongRubberDuckyDesc,blocks,Promo,,,"Check out Ohio University's J. Warren McClure School of Emerging Communication Technologies. They teach both game development and networking."
 zztongBicycle,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
 zztongBicycleLeft,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
 zztongBicycleRight,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
 zztongBicycleWall,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
 zztongBicycleWallLeft,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
 zztongBicycleWallRight,vehicles,item,,,Bicycle,,Fahrrad,Bicicleta,Bicyclette,Bicicletta,自転車,자전거,Rower,Bicicleta,Велосипед,Bisiklet,自行车,腳踏車,Bicicleta
+zztongRubberDucky,blocks,Promo,,,"Rubber Ducky"
+zztongRubberDuckyDesc,blocks,Promo,,,"Check out Ohio University's J. Warren McClure School of Emerging Communication Technologies. They teach both game development and networking."
+zztongShippingCrateFredEFromage,blocks,Container,,,Fred E Fromage Sealed Shipping Crate
+zztongFredEFromageStorage,blocks,Container,,,Fred E Fromage Box
